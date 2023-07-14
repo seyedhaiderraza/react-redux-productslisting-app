@@ -13,6 +13,10 @@ export const productReducer = (state = initialState, action) => {
       return {
         ...state,products:payload
       };
+      case actionTypes.FETCH_ASYNC_PRODUCTS:
+        return {
+          ...state,products:payload
+        };
 
   
     default:
@@ -30,6 +34,10 @@ export const getProductReducer = (state={}, {type, payload})=>{
         return {
           
       }
+      case actionTypes.FETCH_ASYNC_SINGLE_PRODUCT:
+        return {
+          ...state,...payload
+        }
       default:
       return {...state};
       }
