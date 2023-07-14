@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProduct,removeProduct } from '../redux/actions/productActions';
-import { Image, Header, Button, Segment } from 'semantic-ui-react';
+import { asyncFetchSingleProduct, getProduct,removeProduct } from '../redux/actions/productActions';
 
 const ProductDetail = () => {
   const product = useSelector((state) => state.product);
@@ -20,7 +19,8 @@ const ProductDetail = () => {
   };
 
   useEffect(() => {
-    productId && fetchProductDetail();
+    //productId && fetchProductDetail();
+    productId && dispatch(asyncFetchSingleProduct(productId));
     return ()=>{
       dispatch(removeProduct())
     }

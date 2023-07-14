@@ -7,7 +7,7 @@ const ProductComponent = () => {
   return (
     <>
       {products && products.map((product) => (
-        <div  className="four wide column">
+        <div key={product.id} className="four wide column">
             <Link to={`/product/${product.id}`}>
               <div className="ui link cards">
                 <div className="card" key={product.id}>
