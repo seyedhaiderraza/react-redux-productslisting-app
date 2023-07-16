@@ -10,7 +10,7 @@ https://react-redux-productslisting-app.vercel.app/
 
 4. # Technology Stack used
 -----------------
-
+HTML5/CSS3
 JavaScript: 📜 
 React: ⚛️
 Axios: 🌐 
@@ -37,4 +37,21 @@ N/A
 
 7. # Screens
 ------------------
+### HomePage
+![image](https://github.com/seyedhaiderraza/react-redux-productslisting-app/assets/129282622/b5941517-78e2-4ccb-80c8-bbac69a344e3)
+
+### Single ProductPage
+
+![image](https://github.com/seyedhaiderraza/react-redux-productslisting-app/assets/129282622/db7ee932-58bb-4504-aa7f-afc2e768d927)
+
+
+
+
+
+
+
+
+
+
+
 
