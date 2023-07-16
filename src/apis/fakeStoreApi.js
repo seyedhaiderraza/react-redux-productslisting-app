@@ -1,7 +1,7 @@
 import axios from 'axios'
 
  const fakeStoreApi = axios.create({
-    baseURL:'https://fakestoreapi.com',
+    baseURL:'http://fakestoreapi.com',
     
 })
 
